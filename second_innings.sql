@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 30, 2016 at 08:12 AM
+-- Generation Time: Sep 30, 2016 at 09:42 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 7.0.8
 
@@ -49,8 +49,13 @@ CREATE TABLE `user_details` (
   `username` varchar(32) NOT NULL,
   `first_name` varchar(10) NOT NULL,
   `last_name` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
   `phone_self` int(10) NOT NULL,
-  `address` text NOT NULL,
+  `address1` text NOT NULL,
+  `address2` text NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `pincode` int(11) NOT NULL,
+  `state` varchar(20) NOT NULL,
   `person_to_contact` varchar(32) NOT NULL,
   `relation` varchar(10) NOT NULL,
   `phone_alt` int(10) NOT NULL
@@ -71,7 +76,8 @@ ALTER TABLE `login`
 -- Indexes for table `user_details`
 --
 ALTER TABLE `user_details`
-  ADD PRIMARY KEY (`username`);
+  ADD PRIMARY KEY (`username`),
+  ADD UNIQUE KEY `email` (`email`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
