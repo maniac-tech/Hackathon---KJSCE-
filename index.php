@@ -1,4 +1,4 @@
 <?php
-	echo "Success!"
-	echo "Success 2 !!"
+	echo "Success!";
+	echo "Success 2 !!";
 ?>
