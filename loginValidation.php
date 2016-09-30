@@ -6,34 +6,26 @@
 	$username="root";
 	$password="";
 	$database="second_innings";
-	$table_name="si_reg";
-
+	$table_name="login";
 	//LOGIN PAGE VARIABLES 
 	$login_username;
 	$login_password;
 	$sql;
-
 	//CONNNECTING TO THE DATABASE 
-	$conn = new mysqli ($servername,$username,$password,$database)
-
-
+	require 'connect.php';
 	//RUNNING SQL QUERY ON SUCCESFULL POST REQUEST FROM HTML PAGE
 	if ($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 		//ENTER THE FIELD DETAILS AND YOU CAN ACCESS THE VALUES.
-		$login_username = $_POST("*****") 
-		$login_password = $_POST("*****")
-
-
+		$login_username = $_POST("*****"); 
+		$login_password = $_POST("*****");
 		//CHECKING CONNECTION STATUS
-		if ($conn -> connect_error)
-			die ("Connection Failed:". $conn->connect_error)
+		if ($con -> connect_error)
+			die ("Connection Failed:". $con->connect_error);
 		else
-
 		//RUNNING SQL QUERY ON SUCCESFULL CONNECTION
-			$sql = "SELECT * FROM si_reg WHERE login_username='$login_username' AND login_password='$login_password'";
-			$result=mysql_query($sql)	
-
+			$sql = "SELECT * FROM login WHERE username='$login_username' AND password='$login_password'";
+			$result=mysql_query($sql);	
 		//CHECKING FOR TRUE SQL OUTPUT	
 		if($result) {
     		if(mysql_num_rows($result) > 0) {
@@ -61,7 +53,4 @@
     		die("Query failed");
     	}
 	}
-
-
-
  ?>
