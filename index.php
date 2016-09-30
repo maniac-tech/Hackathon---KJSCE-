@@ -1,4 +1,3 @@
 <?php
-	echo "Success!";
-	echo "Success 2 !!";
+	echo "This page is under Construction."
 ?>
