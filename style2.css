@@ -1,0 +1,24 @@
+body{
+    /*background-color:#a2d0ea;*/
+    background:url('overlay1.jpg') no-repeat center top;
+}
+.container {
+  position: relative;
+  height: 14rem;
+  border: 1px solid;
+}
+
+.jumbotron {
+  opacity: 0.50;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px;
+  z-index: 2;
+  box-shadow: 0 8px 16px -6px gray;
+}
+
+#img1{
+  opacity: auto;
+}
