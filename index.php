@@ -1,3 +1,3 @@
 <?php
-	include_once("first.html");
+	include_once("mainfile.html");
 ?>
