@@ -1,3 +1,3 @@
 <?php
-	echo "This page is under Construction."
+	include_once("first.html");
 ?>
