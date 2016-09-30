@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
   <title>hii</title>
   <meta charset="utf-8">
@@ -12,11 +12,20 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
 <body>
-<div class="container theme-showcase" role="main">
+<div class="container-fluid" id="p" role="main">
     
   <div class="jumbotron">
-    <input type="text" name="firstname" value="mickey"><br>
-    <input type="text" name="firstname" value="mickey">
+    <form>
+	  <div class="form-group">
+	    
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="UserName">
+	  </div>
+	  <div class="form-group">
+	    
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	 	<button type="submit" class="btn btn-default">Submit</button>
+	</form>
 
 
   </div>
@@ -24,7 +33,7 @@
 </div>
 
 
-</div>
+
   
 
 
