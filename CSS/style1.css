@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  height: 14rem;
+  border: 1px solid;
+  background-color:red;
+
+}
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px dashed deeppink;
+  padding:200px 0 140px 0;
+}
+
+p.
