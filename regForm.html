@@ -12,40 +12,61 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<br><br><br><br>
 	<div class="container-fluid" id="p" role="main"> 
 		<div class="jumbotron">
-			<form>
+			<form method="post">
 			Fill in the details below to Register yourself with Us.
+				<div class="form-group">
+					<p>Username:</p>
+					<input type="text" class="form-control" name="username" placeholder="Username">
+				</div>
 				<div class="form-group">	    
 					<p>First Name:</p>
-					<input type="text" class="form-control" id="firstname" placeholder="First Name">
+					<input type="text" class="form-control" name="firstname" placeholder="First Name">
 				</div>
 				<div class="form-group">	
 					<p>Last Name:</p>    
-					<input type="text" class="form-control" id="lastname" placeholder="Last Name">
+					<input type="text" class="form-control" name="lastname" placeholder="Last Name">
 				</div>
 				<div class="form-group">
-					<p>User Name:</p>
-					<input type="text" class="form-control" id="username" placeholder="UserName">
+					<p>Email Address:</p>
+					<input type="email" class="form-control" name="email" placeholder="email">
+				</div>
+				<div class="form-group">
+					<p>Contact Number:</p>
+					<input type="text" class="form-control" name="phone_self" placeholder="Phone">
 				</div>
 				<div class="form-group">	
 					<p>Address:</p>    
-					<input type="text" class="form-control" id="address1" placeholder="Address1">
+					<input type="text" class="form-control" name="address1" placeholder="Address1">
 				</div>
 				<div class="form-group">	  
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="address2">
+					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="address2">
 				</div>
 				<div class="form-group">	
 					<p>City:</p>    
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="city">
+					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="city">
 				</div>
 				<div class="form-group">	
 					<p>Pincode:</p>    
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="pincode">
+					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="pincode">
 				</div>
 				<div class="form-group">	
 					<p>State:</p>    
-					<input type="text" class="form-control" id="exampleInputPassword1" placeholder="state">
+					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="state">
+				</div>
+					<div class="form-group">
+					<p>Incase of Emergency Contact:</p>
+					<input type="text" class="form-control" name="person_to_contact" placeholder="person_to_contact">
+				</div>
+				<div class="form-group">
+					<p>Relation:</p>
+					<input type="text" class="form-control" name="relation" placeholder="Relation">
+				</div>
+				<div class="form-group">
+					<p>His Contact Number:</p>
+					<input type="text" class="form-control" name="phone_alt" placeholder="Phone">
 				</div>
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
@@ -53,4 +74,3 @@
 	</div>
 </body>
 </html>
-<body>
