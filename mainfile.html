@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Innings</title>
+
+</head>
+<body >
+<ul>
+	<li><a>Home</a></li>
+	<li><a>About</a></li>
+	<li><a>Profile</a></li>
+	<li><a>Rights</a></li>
+</ul>
+<p>Second Innings!</p>
+
+</body>
+<style type="text/css">
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</html>
