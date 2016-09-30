@@ -1,56 +1,57 @@
-<?php 
-//Login Validation code for the App
-	
-	//WAMP SERVER DATABASE CONNECTION SETTINGS:
-	$server_name="localhost";
-	$username="root";
-	$password="";
-	$database="second_innings";
-	$table_name="login";
-	//LOGIN PAGE VARIABLES 
-	$login_username;
-	$login_password;
-	$sql;
-	//CONNNECTING TO THE DATABASE 
-	require 'connect.php';
-	//RUNNING SQL QUERY ON SUCCESFULL POST REQUEST FROM HTML PAGE
-	if ($_SERVER["REQUEST_METHOD"]=="POST")
-	{
-		//ENTER THE FIELD DETAILS AND YOU CAN ACCESS THE VALUES.
-		$login_username = $_POST("*****"); 
-		$login_password = $_POST("*****");
-		//CHECKING CONNECTION STATUS
-		if ($con -> connect_error)
-			die ("Connection Failed:". $con->connect_error);
-		else
-		//RUNNING SQL QUERY ON SUCCESFULL CONNECTION
-			$sql = "SELECT * FROM login WHERE username='$login_username' AND password='$login_password'";
-			$result=mysql_query($sql);	
-		//CHECKING FOR TRUE SQL OUTPUT	
-		if($result) {
-    		if(mysql_num_rows($result) > 0) {
-    			//Login Successful
-    			session_regenerate_id();
-    			$member = mysql_fetch_assoc($result);
-    			$_SESSION['SESS_MEMBER_ID'] = $member['mem_id'];
-    			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
-    			$_SESSION['SESS_LAST_NAME'] = $member['password'];
-    			session_write_close();
-    			header("location:****");
-    			exit();
-    		}else {
-    			//Login failed
-    			$errmsg_arr[] = 'user name and password not found';
-    			$errflag = true;
-    			if($errflag) {
-    				$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
-    				session_write_close();
-    				header("location:***");
-    				exit();
-    			}
-    		}
-    	}else {
-    		die("Query failed");
-    	}
-	}
- ?>
+<?php
+        //Include database connection details
+        require_once('connect.php');
+     
+        //Array to store validation errors
+        $errmsg_arr = array();
+     
+        //Validation error flag
+        $errflag = false;
+
+        //file to check
+        $files=fopen("log.txt", "w");
+        fwrite($files, "string");
+     
+        //Sanitize the POST values
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        fwrite($files, $username);
+        fwrite($files, $password);
+     
+        //Input Validations
+        if($username == '') {
+            $errmsg_arr[] = 'username missing';
+            $errflag = true;
+        }
+        if($password == '') {
+            $errmsg_arr[] = 'Password missing';
+            $errflag = true;
+        }
+     
+        //If there are input validations, redirect back to the login form
+        if($errflag) {
+            $_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+            fwrite($files, $errmsg_arr);
+            fwrite($files, $errflag);
+            session_write_close();
+            header("location: Login1.html");
+            exit();
+        }
+     
+        //Create query
+        $qry="SELECT username,password FROM login WHERE username='$username' AND password='$password'";
+        $result=mysqli_query($con,$qry);
+        $num_row = mysqli_num_rows($result);
+        $row=mysqli_fetch_array($result);
+        if( $num_row ==1 )
+         {
+            $_SESSION['username']=$row['username'];
+            header("Location: next.html");
+           	exit;   
+        }
+        else
+        {
+            header("Location: error.html");
+        }
+        fclose($files);
+?>
