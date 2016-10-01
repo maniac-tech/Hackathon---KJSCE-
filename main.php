@@ -12,10 +12,11 @@
 		<div class="container" id="Para">
 			<h1>Second Innings!</h1>
 		</div>
+		<p>What is Second Innings about?</p>
 		<div id="loginContent">
 			<button>Login now!</button>
+		</div>
 	</center>
-	</div>
 <script>
 $(document).ready(function(){
     $("button").click(function(){
