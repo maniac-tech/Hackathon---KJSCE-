@@ -12,15 +12,9 @@
 	<title>  </title>
 </head>
 <body>
-<nav class="navbar navbar-fixed-top">
-		<ul>
-			<li><a href="firstLogin.php">Home</a></li>
-			<li><a href=#>About</a></li>
-			<li><a href="Details.html">Profile</a></li>
-			<li><a href="laws.html">Rights</a></li>
-			<li><a href="Experthelp.html">Expert Help</a></li>
-		</ul>
-</nav>
+<?php
+	  		require ("navigationBar.html");
+	  ?>
 <div id="main_content">
 <br><br><br>
 	<h1 align="center">
