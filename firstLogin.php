@@ -83,6 +83,7 @@
         margin-left: 55px;
       }
       #bottomMain{
+      	margin-top: 50px;
       	float: right;
       	margin-right: 155px;
       }
