@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
 	<link rel="stylesheet" type="text/css" href="CSS/regForm.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" href="js/bootstrap.min.js"></script>
@@ -76,14 +75,4 @@
 		</div>
 	</div>
 </body>
-<style type="text/css">
-body{
-		background-image: url("city.jpg") no-repeat center center fixed;
-		/*background-size: 1400px 800px;*/
-		-webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-	}
-</style>
 </html>
