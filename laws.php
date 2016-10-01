@@ -88,7 +88,7 @@
 </body>
 <style type="text/css">
 	body{
-		background-image: url("city.jpg") /*no-repeat center center fixed*/;
+		background-image: url("cityy.jpg") /*no-repeat center center fixed*/;
 		background-size: 1400px 800px;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
