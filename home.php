@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php
-		require ("navigationBar1.html");
+		require ("navigationBar.html");
 	?>
 
 	<center>
