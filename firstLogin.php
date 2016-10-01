@@ -71,6 +71,7 @@
 <style>
       html, body {
       	background-image: url("cityy.jpg");
+	background-size:1300px, 400px;
         height: 100%;
         margin: 0;
         padding: 0;
