@@ -1,3 +1,3 @@
 <?php
-  require ("del.php");
+  require ("home.php");
 ?>
