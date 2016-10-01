@@ -5,9 +5,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-	<?php 
-		require ("navigationBar.html");
-	?>
 	<center>
 		<div class="container" id="Para">
 			<h1>Second Innings!</h1>
