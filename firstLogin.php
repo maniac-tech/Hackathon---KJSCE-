@@ -15,6 +15,7 @@
     <div id="map"></div>
     <div id="bottomMain">
     	<button>Get Home</button>
+    	<br>
     	<button>Nearby Stores</button>
     </div>
     <script>
@@ -76,7 +77,7 @@
         width: 50%;
         border:1px solid black;
         float: left;
-        padding-left: 15px;
+        margin-left: 15px;
       }
       #bottomMain{
       	float: right;
