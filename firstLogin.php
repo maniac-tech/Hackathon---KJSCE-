@@ -14,9 +14,9 @@
 	</div>
     <div id="map"></div>
     <div id="bottomMain">
-    	<button>Get Home</button>
+    	<button type="button" class="btn btn-success">Get Home</button>
     	<br>
-    	<button>Nearby Stores</button>
+    	<button type="button" class="btn btn-success">Nearby Stores</button>
     </div>
     <script>
       // Note: This example requires that you consent to location sharing when
