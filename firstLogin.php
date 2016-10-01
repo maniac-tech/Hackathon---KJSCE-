@@ -57,6 +57,7 @@
   </body>
 <style>
       html, body {
+      	background-image: url("city.jpg");
         height: 100%;
         margin: 0;
         padding: 0;
