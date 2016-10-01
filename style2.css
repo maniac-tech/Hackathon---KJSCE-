@@ -1,6 +1,7 @@
 body{
     /*background-color:#a2d0ea;*/
-    background:url('cityy.jpg') no-repeat center top;
+    background-image:url('cityy.jpg') no-repeat center top;
+    
 }
 .container {
   position: relative;
