@@ -90,9 +90,9 @@
 	body{
 		background-image: url("city.jpg") /*no-repeat center center fixed*/;
 		background-size: 1400px 800px;
-		/*background-attachment: fixed;
+		background-attachment: fixed;
 		background-repeat: no-repeat;
-		-webkit-background-size: cover;
+		/*-webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;*/
