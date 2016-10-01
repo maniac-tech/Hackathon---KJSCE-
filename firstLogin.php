@@ -76,6 +76,7 @@
         width: 50%;
         border:1px solid black;
         float: left;
+        padding-left: 15px;
       }
       #bottomMain{
       	float: right;
