@@ -13,6 +13,10 @@
 		<p><center><h1>You are at: KJ Somaiya College.</h1></center></p>
 	</div>
     <div id="map"></div>
+    <div id="bottomMain">
+    	<button>Get Home</button>
+    	<button>Nearby Stores</button>
+    </div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
@@ -71,6 +75,10 @@
         height: 50%;
         width: 50%;
         border:1px solid black;
+        float: left;
+      }
+      #bottomMain{
+      	float: right;
       }
     </style>
 </html>
