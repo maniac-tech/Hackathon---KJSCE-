@@ -1,3 +1,3 @@
 <?php
-  echo ("Echo!");
+  require ("del.html");
 ?>
