@@ -18,7 +18,7 @@
     <div id="map"></div>
     <div id="bottomMain" >
     	<button type="button" class="btn btn-success">Get Home</button>
-    	<br>
+    	<br><br><br>
     	<button type="button" class="btn btn-success">Nearby Stores</button>
     </div>
     <script>
