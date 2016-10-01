@@ -71,16 +71,18 @@
       }
       #topMain{
       	color: pink ;
+	margin-top: 55px;
       }
       #map {
         height: 50%;
         width: 50%;
         border:1px solid black;
         float: left;
-        margin-left: 15px;
+        margin-left: 55px;
       }
       #bottomMain{
       	float: right;
+      	margin-right: 55px;
       }
     </style>
 </html>
