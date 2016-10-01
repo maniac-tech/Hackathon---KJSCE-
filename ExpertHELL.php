@@ -6,6 +6,9 @@
   ****************************************
 -->
 <link rel="stylesheet" type="text/css" href="CSS/Experthelp.css">
+<?php
+	  		require ("navigationBar.html");
+	  ?>
 <div id="contact-form">
 	<div>
 		<h1>Nice to Meet You!</h1> 
