@@ -46,5 +46,9 @@ ul {
 }
 body{
     /*background-color:#a2d0ea;*/
-    background:url('details.jpg') ;
+    background:url('details.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
 }
