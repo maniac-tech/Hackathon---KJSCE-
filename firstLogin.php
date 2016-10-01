@@ -17,15 +17,16 @@
 	</div>
     <div id="map"></div>
     <div id="bottomMain" >
-    	<button type="button" class="btn btn-success">Get Home</button>
+    	<button type="button" class="btn btn-success" > <a href="navigation route.html">Get Home</a></button>
     	<br><br><br>
-    	<button type="button" class="btn btn-success">Nearby Stores</button>
+    	<button type="button" class="btn btn-success" onClick="nearbyStores()">Nearby Stores</button>
     </div>
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
+
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -89,3 +90,4 @@
       }
     </style>
 </html>
+
