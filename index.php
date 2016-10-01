@@ -27,12 +27,12 @@ $(document).ready(function(){
 </body>
 <style type="text/css">
 	body{
-		background-image: url("city.jpg") no-repeat center center fixed;
-		/*background-size: 1400px 800px;*/
-		-webkit-background-size: cover;
+		background-image: url("city.jpg") /*no-repeat center center fixed*/;
+		background-size: 1400px 800px;
+		/*-webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: cover;*/
 	}
 	ul {
 		list-style-type: none;
