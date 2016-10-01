@@ -19,7 +19,7 @@
     <div id="bottomMain" >
     	<button type="button" class="btn btn-success" > <a href="navigation route.html">Get Home</a></button>
     	<br><br><br>
-    	<button type="button" class="btn btn-success" onClick="nearbyStores()">Nearby Stores</button>
+    	<button type="button" class="btn btn-success" onClick="gethome()">Nearby Stores</button>
     </div>
     <script>
       // Note: This example requires that you consent to location sharing when
@@ -27,7 +27,9 @@
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
 
-
+	function getHome(){
+	window.location.href = "http://new.website.com/that/you/want_to_go_to.html";
+	}
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 19.0730, lng: 72.8997},
