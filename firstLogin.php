@@ -10,7 +10,7 @@
 	  		require ("navigationBar.html");
 	  ?>
 	<div>
-		<p>You are at: KJ Somaiya College.</p>
+		<p><h1>You are at: KJ Somaiya College.</h1></p>
 	</div>
     <div id="map"></div>
     <script>
