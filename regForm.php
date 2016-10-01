@@ -17,7 +17,7 @@
 <body>
 	<div class="container-fluid" role="main"> 
 		<div class="jumbotron" id="p">
-			<form method="post">
+			<form method="post" action="Register.php">
 			Fill in the details below to Register yourself with Us.
 				<div class="form-group">
 					<p>Username:</p>
@@ -35,6 +35,14 @@
 					<p>Email Address:</p>
 					<input type="email" class="form-control" name="email" placeholder="email">
 				</div>
+				<div class="form-group">	    
+					<p>Password:</p>
+					<input type="password" class="form-control" name="password" placeholder="Password">
+				</div>
+				<div class="form-group">	    
+					<p>Confirm password:</p>
+					<input type="password" class="form-control" name="Cpassword" placeholder="Confirm Password">
+				</div>
 				<div class="form-group">
 					<p>Contact Number:</p>
 					<input type="text" class="form-control" name="phone_self" placeholder="Phone">
@@ -44,19 +52,19 @@
 					<input type="text" class="form-control" name="address1" placeholder="Address1">
 				</div>
 				<div class="form-group">	  
-					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="address2">
+					<input type="text" class="form-control" name="address2" placeholder="Address2">
 				</div>
 				<div class="form-group">	
 					<p>City:</p>    
-					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="city">
+					<input type="text" class="form-control" name="city" placeholder="city">
 				</div>
 				<div class="form-group">	
 					<p>Pincode:</p>    
-					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="pincode">
+					<input type="text" class="form-control" name="pincode" placeholder="pincode">
 				</div>
 				<div class="form-group">	
 					<p>State:</p>    
-					<input type="text" class="form-control" name="exampleInputPassword1" placeholder="state">
+					<input type="text" class="form-control" name="state" placeholder="state">
 				</div>
 					<div class="form-group">
 					<p>Incase of Emergency Contact:</p>
