@@ -9,7 +9,9 @@
 	  <?php
 	  		require ("navigationBar.html");
 	  ?>
-
+	<div>
+		<p>You are at: KJ Somaiya College.</p>
+	</div>
     <div id="map"></div>
     <script>
       // Note: This example requires that you consent to location sharing when
