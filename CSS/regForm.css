@@ -27,6 +27,24 @@ ul {
 	.active {
 		background-color: #4CAF50;
 	}
-	.jumbotron{
-		top: 800px;
-	}
+
+.container {
+  position: relative;
+  height: 14rem;
+  border: 1px solid;
+  background-color:#a2d0ea;
+
+}
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px dashed;
+  top: 800px;  
+}
+body{
+    /*background-color:#a2d0ea;*/
+    background:url('details.jpg') ;
+}
