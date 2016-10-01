@@ -11,14 +11,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" href="js/bootstrap.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<nav class="navbar navbar-fixed-top">
-		<ul>
-			<li><a>Home</a></li>
-			<li><a>About</a></li>
-			<li><a>Profile</a></li>
-			<li><a>Rights</a></li>
-		</ul>
-	</nav>
+	<?php 
+		require ("navigationBar.html");
+	?>
 </head>
 <body>
 	<div class="container-fluid" role="main"> 
