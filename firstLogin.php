@@ -66,10 +66,8 @@
       }
       #topMain{
       	color: pink ;
-      	float: right;
       }
       #map {
-      	float: left;
         height: 50%;
         width: 50%;
         border:1px solid black;
