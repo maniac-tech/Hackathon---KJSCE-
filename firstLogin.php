@@ -19,7 +19,7 @@
     <div id="bottomMain" >
     	<button type="button" class="btn btn-success" > <a href="navigation route.html">Get Home</a></button>
     	<br><br><br>
-    	<button type="button" class="btn btn-success" onClick="getHome()">Nearby Stores</button>
+    	<button type="button" class="btn btn-success"> <a href="Location Based Markers.html">Nearby Stores</a></button>
     </div>
     <script>
       // Note: This example requires that you consent to location sharing when
