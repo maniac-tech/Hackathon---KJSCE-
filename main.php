@@ -12,6 +12,9 @@
 		<p><I>What is Second Innings about?</i></p>
 		<p>Second Innings was developed at a Hackathon held by KJSCE.
 		The idea behind developing this was to make old age life easier.</p>
+		
+		<p><I> What is our Idea? </i></p>
+		<p>Our Idea was to create a web app, which provided all the necessary information to the user.</p>
 		<div id="loginContent">
 			<button>Login now!</button>
 		</div>
