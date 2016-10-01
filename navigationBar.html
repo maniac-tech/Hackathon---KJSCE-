@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html>
-<body>
-	<nav class="navbar navbar-fixed-top">
-		<ul>
-			<li><a>Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="rights.html">Rights</a></li>
-		</ul>
-	</nav>
-</body>
-<style type="text/css">
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-		position: relative;
-		width: 100%;
-	}
-	li {
-		float: left;
-		border-right: 1px solid #bbb;
-	}
-	li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-	}
-	li a:hover:not(.active) {
-		background-color: #111;
-	}
-	li:last-child {
-		border-right: none;
-	}
-	.active {
-		background-color: #4CAF50;
-	}
+<head>
+<style>
+body {margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d5d5bf;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
 </style>
+</head>
+<body>
+
+<ul class="topnav" id="myTopnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
 </html>
