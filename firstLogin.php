@@ -9,8 +9,8 @@
 	  <?php
 	  		require ("navigationBar.html");
 	  ?>
-	<div>
-		<p><h1>You are at: KJ Somaiya College.</h1></p>
+	<div id="topMain">
+		<p><center><h1>You are at: KJ Somaiya College.</h1></center></p>
 	</div>
     <div id="map"></div>
     <script>
@@ -63,6 +63,9 @@
         height: 100%;
         margin: 0;
         padding: 0;
+      }
+      #topMain{
+      	color: pink ;
       }
       #map {
         height: 50%;
