@@ -2,6 +2,9 @@
 <html>
 <head>
 	<title>Second Innings</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
 	<nav class="navbar navbar-fixed-top">
 		<ul>
 			<li><a>Home</a></li>
@@ -10,17 +13,22 @@
 			<li><a>Rights</a></li>
 		</ul>
 	</nav>
-</head>
-<body>
 
 	<center>
 	<div class="container" id="Para">
 		<h1>Second Innings!</h1>
 	</div>
-	<button onclick="window.location='Login.html';">Login now!</button>
-	</center>
-
-
+	<div id="loginContent">
+		<button onclick="window.location='Login.html';">Login now!</button>
+		</center>
+	</div>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#loginContent").load("demo_test.txt");
+    });
+});
+</script>
 </body>
 <style type="text/css">
 	body{
@@ -36,12 +44,10 @@
 		position: relative;
 		width: 100%;
 	}
-
 	li {
 		float: left;
 		border-right: 1px solid #bbb;
 	}
-
 	li a {
 		display: block;
 		color: white;
@@ -49,15 +55,12 @@
 		padding: 14px 16px;
 		text-decoration: none;
 	}
-
 	li a:hover:not(.active) {
 		background-color: #111;
 	}
-
 	li:last-child {
 		border-right: none;
 	}
-
 	.active {
 		background-color: #4CAF50;
 	}
