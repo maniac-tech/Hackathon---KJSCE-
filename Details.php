@@ -12,6 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<?php
+	  		require ("navigationBar.html");
+	  ?>
 	<div class="container-fluid" role="main">
 		<div class="jumbotron" id="jumbo">
 			<div class="bg" id="img1">
