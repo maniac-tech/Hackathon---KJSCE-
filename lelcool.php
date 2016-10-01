@@ -56,9 +56,6 @@
     <title></title>
   </head>
   <body>
-    <?php
-        require ("navigationBar.html");
-    ?>
     <div id="myDIV" class="header">		
       <h2>Things that I have to do</h2>
 
