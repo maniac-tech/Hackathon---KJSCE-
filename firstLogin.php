@@ -84,7 +84,7 @@
       }
       #bottomMain{
       	float: right;
-      	margin-right: 55px;
+      	margin-right: 155px;
       }
     </style>
 </html>
