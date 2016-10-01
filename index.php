@@ -1,3 +1,3 @@
 <?php
-  require ("home.php");
+  echo ("Echo!");
 ?>
