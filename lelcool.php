@@ -4,6 +4,9 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="CSS/lillyput.css">
+	<?php
+	  		require ("navigationBar.html");
+	  ?>
 <script>
 var myNodelist = document.getElementsByTagName("LI");
 var i;
@@ -56,7 +59,7 @@ function newElement() {
 </head>
 <body>
 <div id="myDIV" class="header">		
-  <h2>Mujhe Joh Karna Hai</h2>
+  <h2>Things that I have to do</h2>
   
   <input type="text" id="myInput" placeholder="Add an Item">
   <span onclick="newElement()" class="addBtn">Add</span>
