@@ -46,7 +46,7 @@
         if( $num_row ==1 )
          {
             $_SESSION['username']=$row['username'];
-            header("Location: next.html");
+            header("Location: laws.html");
            	exit;   
         }
         else
