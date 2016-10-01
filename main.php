@@ -9,7 +9,9 @@
 		<div class="container" id="Para">
 			<h1>Second Innings!</h1>
 		</div>
-		<p>What is Second Innings about?</p>
+		<p><I>What is Second Innings about?</i></p>
+		<p>Second Innings was developed at a Hackathon held by KJSCE.
+		The idea behind developing this was to make old age life easier.</p>
 		<div id="loginContent">
 			<button>Login now!</button>
 		</div>
